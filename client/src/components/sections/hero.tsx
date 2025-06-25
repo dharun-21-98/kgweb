@@ -15,7 +15,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       />
       <div className="absolute inset-0 bg-navy-900 bg-opacity-70" />
