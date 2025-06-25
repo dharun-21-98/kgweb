@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Download, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import heroBearingImage from "@assets/image_1750858851431.jpg";
 
 interface HeroProps {
   onDownloadBrochure: () => void;
@@ -11,11 +12,11 @@ interface HeroProps {
 export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
   return (
     <section className="min-h-screen relative overflow-hidden">
-      {/* Background industrial image */}
+      {/* Background bearing image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: `url(${heroBearingImage})`
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/90" />
