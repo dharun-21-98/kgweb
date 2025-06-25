@@ -10,34 +10,39 @@ interface HeroProps {
 
 export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
   return (
-    <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
-      {/* Background bearing image */}
+    <section className="min-h-screen relative overflow-hidden">
+      {/* Background industrial image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       />
-      <div className="absolute inset-0 bg-navy-900 bg-opacity-70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/90" />
       
-      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <GlassCard className="p-12 md:p-16 bg-navy-900/70 backdrop-blur-lg border-white/20">
+      {/* Grid layout with content */}
+      <div className="relative z-10 min-h-screen grid lg:grid-cols-2 items-center">
+        {/* Left side - Main content */}
+        <div className="px-6 lg:px-16 py-20">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-xl"
+          >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+              className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              KG International <span className="text-red-600">Bearings</span>
+              KG International
+              <br />
+              <span className="text-red-600">Bearings</span>
             </motion.h1>
             
             <motion.p 
-              className="text-xl md:text-2xl text-gray-200 mb-4 font-light"
+              className="text-xl lg:text-2xl text-gray-200 mb-6 font-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -46,7 +51,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
             </motion.p>
             
             <motion.p 
-              className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg text-gray-300 mb-10 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -56,7 +61,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
             </motion.p>
             
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6 justify-center"
+              className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -64,7 +69,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
               <Button
                 onClick={onDownloadBrochure}
                 size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
+                className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 px-8 py-4"
               >
                 <Download className="w-5 h-5" />
                 Download Brochure
@@ -74,14 +79,48 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
                 onClick={onLearnMore}
                 variant="outline"
                 size="lg"
-                className="glass-morphism border-white/20 hover:bg-white hover:bg-opacity-20 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
+                className="border-2 border-white/30 hover:bg-white/10 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 px-8 py-4"
               >
                 <ArrowRight className="w-5 h-5" />
                 Learn More
               </Button>
             </motion.div>
-          </GlassCard>
-        </motion.div>
+          </motion.div>
+        </div>
+        
+        {/* Right side - Visual element */}
+        <div className="hidden lg:flex items-center justify-center px-16 py-20">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative"
+          >
+            <GlassCard className="p-8 bg-navy-900/80 backdrop-blur-lg border-white/20 max-w-md">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-white font-bold text-3xl">KG</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  Premium Quality
+                </h3>
+                <p className="text-gray-200 leading-relaxed">
+                  ISO certified manufacturing with precision engineering and rigorous quality control for mission-critical applications.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-red-500">1M+</div>
+                    <div className="text-gray-300 text-sm">Products</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-red-500">10+</div>
+                    <div className="text-gray-300 text-sm">Years</div>
+                  </div>
+                </div>
+              </div>
+            </GlassCard>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
