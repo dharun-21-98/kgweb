@@ -47,7 +47,7 @@ export function ProductShowcase() {
               <GlassCard 
                 variant="dark" 
                 hover
-                className={`overflow-hidden group cursor-pointer ${
+                className={`overflow-hidden group cursor-pointer bg-white/95 backdrop-blur-lg border-gray-200/50 ${
                   index === 0 ? "h-full" : ""
                 }`}
                 onClick={() => openProductModal(product)}
@@ -59,10 +59,10 @@ export function ProductShowcase() {
                   style={{ backgroundImage: `url('${product.image}')` }}
                 />
                 <div className={`${index === 0 ? "absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent flex flex-col justify-end" : ""} p-6`}>
-                  <h3 className={`${index === 0 ? "text-2xl" : "text-xl"} font-semibold ${index === 0 ? "text-white" : "text-navy-800"} mb-2`}>
+                  <h3 className={`${index === 0 ? "text-2xl text-white" : "text-xl text-navy-800"} font-semibold mb-2`}>
                     {product.name}
                   </h3>
-                  <p className={`${index === 0 ? "text-gray-200" : "text-gray-600"} text-sm mb-4`}>
+                  <p className={`${index === 0 ? "text-gray-200" : "text-gray-700"} text-sm mb-4`}>
                     {product.description}
                   </p>
                   <Button

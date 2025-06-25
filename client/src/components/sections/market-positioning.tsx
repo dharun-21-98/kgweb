@@ -31,7 +31,7 @@ export function MarketPositioning() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <GlassCard variant="dark" className="p-8">
+            <GlassCard variant="light" className="p-8 bg-white/90 backdrop-blur-lg border-gray-200/50">
               <h3 className="text-2xl font-semibold text-navy-800 mb-8">
                 Quality Comparison
               </h3>

@@ -15,10 +15,10 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       />
-      <div className="absolute inset-0 bg-navy-900 bg-opacity-60" />
+      <div className="absolute inset-0 bg-navy-900 bg-opacity-70" />
       
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <motion.div
@@ -26,7 +26,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <GlassCard className="p-12 md:p-16">
+          <GlassCard className="p-12 md:p-16 bg-navy-900/70 backdrop-blur-lg border-white/20">
             <motion.h1 
               className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}

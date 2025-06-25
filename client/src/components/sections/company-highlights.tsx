@@ -35,13 +35,13 @@ export function CompanyHighlights() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <GlassCard className="p-8 text-center">
+              <GlassCard className="p-8 text-center bg-navy-800/80 backdrop-blur-lg border-white/20">
                 <AnimatedCounter
                   value={stat.value}
                   suffix={stat.suffix}
-                  className="text-4xl md:text-5xl font-bold text-red-600 mb-4"
+                  className="text-4xl md:text-5xl font-bold text-red-500 mb-4"
                 />
-                <p className="text-white font-medium text-lg">{stat.label}</p>
+                <p className="text-gray-100 font-medium text-lg">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}
