@@ -6,7 +6,7 @@ export const PRODUCTS: Product[] = [
     name: "Precision Ball Bearings",
     description: "High-performance ball bearings for demanding industrial applications",
     fullDescription: "Our precision ball bearings are engineered for the most demanding industrial applications, featuring advanced materials and manufacturing processes that ensure superior performance, longevity, and reliability. These bearings are designed to handle high speeds, heavy loads, and extreme operating conditions while maintaining exceptional precision and smooth operation.",
-    image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
     specs: {
       material: "Chrome Steel",
       loadRating: "12000N",
@@ -20,7 +20,7 @@ export const PRODUCTS: Product[] = [
     name: "Roller Bearings",
     description: "Heavy-duty roller bearings for high-load applications",
     fullDescription: "Our roller bearings are specifically designed for heavy-duty applications where high radial loads and moderate speeds are encountered. These bearings feature optimized internal geometry and advanced heat treatment processes that provide exceptional load capacity and extended service life.",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
     specs: {
       material: "Alloy Steel",
       loadRating: "25000N",
@@ -34,7 +34,7 @@ export const PRODUCTS: Product[] = [
     name: "Automotive Bearings",
     description: "Specialized bearings for automotive applications",
     fullDescription: "Our automotive bearings are engineered to meet the stringent requirements of modern vehicles, providing reliable performance under varying operating conditions. These bearings are designed for easy installation and maintenance while delivering optimal performance throughout the vehicle's lifecycle.",
-    image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    image: "https://images.unsplash.com/photo-1487754020197-de159b065b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
     specs: {
       material: "Stainless Steel",
       loadRating: "8000N",
@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
     name: "Thrust Bearings",
     description: "Axial load bearings for specialized machinery",
     fullDescription: "Our thrust bearings are designed to handle pure axial loads and combined axial-radial loads in various industrial applications. These bearings feature advanced cage designs and optimized contact angles that provide superior performance and reliability.",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
     specs: {
       material: "Ceramic Hybrid",
       loadRating: "15000N",
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     name: "Needle Bearings",
     description: "Compact bearings for space-constrained applications",
     fullDescription: "Our needle bearings provide exceptional load capacity in minimal space, making them ideal for applications where space is limited but high performance is required. These bearings feature precision-manufactured needle rollers and high-quality cage materials.",
-    image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
     specs: {
       material: "Bearing Steel",
       loadRating: "6000N",
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
     name: "Spherical Bearings",
     description: "Self-aligning bearings for misalignment compensation",
     fullDescription: "Our spherical bearings are designed to accommodate misalignment while maintaining optimal performance. These bearings feature a spherical outer ring raceway that allows the bearing to self-align, reducing stress and extending service life.",
-    image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     specs: {
       material: "Carbon Steel",
       loadRating: "18000N",
