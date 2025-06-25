@@ -19,17 +19,19 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
           backgroundImage: `url(${heroBearingImage})`
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-navy-900/60 to-navy-900/80" />
+      <div className="absolute inset-0 lg:bg-gradient-to-r lg:from-black/90 lg:via-transparent lg:to-transparent" />
       
       {/* Grid layout with content */}
       <div className="relative z-10 min-h-screen grid lg:grid-cols-2 items-center">
         {/* Left side - Main content */}
-        <div className="px-6 lg:px-16 py-20">
+        <div className="px-6 lg:px-16 py-20 relative">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl lg:rounded-none"></div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl"
+            className="max-w-xl relative z-10"
           >
             <motion.h1 
               className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight"
