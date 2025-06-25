@@ -11,7 +11,7 @@ const iconMap = {
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 bg-gradient-to-br from-navy-900 to-navy-800 relative overflow-hidden">
+    <section className="py-20 bg-navy-900 relative overflow-hidden">
       {/* Background image */}
       <div 
         className="absolute inset-0 opacity-10 bg-cover bg-center"
