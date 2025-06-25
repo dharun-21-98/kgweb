@@ -46,20 +46,20 @@ export function WhyChooseUs() {
                 <GlassCard 
                   variant="dark"
                   hover
-                  className="p-8 h-full bg-navy-800/80 backdrop-blur-lg border-white/20"
+                  className="p-8 h-full bg-navy-900/90 backdrop-blur-lg border-white/30"
                 >
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white text-3xl font-bold mr-4">
                       {item.number}
                     </div>
-                    <IconComponent className="w-10 h-10 text-red-400" />
+                    <IconComponent className="w-10 h-10 text-red-500" />
                   </div>
                   
                   <h3 className="text-2xl font-semibold text-white mb-4">
                     {item.title}
                   </h3>
                   
-                  <p className="text-gray-200 leading-relaxed">
+                  <p className="text-gray-100 leading-relaxed">
                     {item.description}
                   </p>
                 </GlassCard>
