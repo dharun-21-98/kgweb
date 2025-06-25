@@ -43,11 +43,7 @@ export function WhyChooseUs() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <GlassCard 
-                  variant="dark"
-                  hover
-                  className="p-8 h-full bg-navy-900/90 backdrop-blur-lg border-white/30"
-                >
+                <div className="p-8 h-full bg-navy-900 rounded-2xl border border-white/20 hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl">
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white text-3xl font-bold mr-4">
                       {item.number}
@@ -59,10 +55,10 @@ export function WhyChooseUs() {
                     {item.title}
                   </h3>
                   
-                  <p className="text-gray-100 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     {item.description}
                   </p>
-                </GlassCard>
+                </div>
               </motion.div>
             );
           })}
