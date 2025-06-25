@@ -79,9 +79,8 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
               
               <Button
                 onClick={onLearnMore}
-                variant="outline"
                 size="lg"
-                className="border-2 border-white/30 hover:bg-white/10 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 px-8 py-4"
+                className="bg-white/20 backdrop-blur-sm border-2 border-white/50 hover:bg-white/30 text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 px-8 py-4"
               >
                 <ArrowRight className="w-5 h-5" />
                 Learn More
