@@ -14,7 +14,7 @@ export function TrustedBy() {
         >
           Trusted by Industry Leaders
         </motion.h2>
-        
+
         <div className="overflow-hidden">
           <motion.div 
             className="flex items-center logo-scroll"

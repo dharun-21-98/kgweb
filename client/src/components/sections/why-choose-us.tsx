@@ -11,12 +11,12 @@ const iconMap = {
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 bg-navy-900 relative overflow-hidden">
+        <section className="py-20 relative overflow-hidden" style={{ backgroundColor: '#d0f2eb', backdropFilter: 'blur(10px)' }}>
       {/* Background image */}
       <div 
-        className="absolute inset-0 opacity-10 bg-cover bg-center"
+        className="absolute inset-0 opacity-20 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://i.postimg.cc/j50ghNj4/shavr-ik-t-Jh73-V0-Jzw0-unsplash.jpg')"
         }}
       />
       
@@ -28,7 +28,7 @@ export function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Why Choose <span className="text-red-600">KG International</span>
+          Why Choose <span className="text-red-600">KG ?</span>
         </motion.h2>
         
         <div className="grid md:grid-cols-3 gap-8">

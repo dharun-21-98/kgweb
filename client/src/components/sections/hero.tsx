@@ -38,8 +38,7 @@ export function Hero({ onDownloadBrochure, onLearnMore }: HeroProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              KG International
-              <br />
+              KG{' '}
               <span className="text-red-600">Bearings</span>
             </motion.h1>
             
